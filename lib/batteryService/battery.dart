@@ -1,0 +1,1 @@
+export 'view/battery.dart';
