@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kfs_admin/fuelService/fuel.dart';
 
 class FuelService extends StatelessWidget {
   const FuelService({super.key});
@@ -12,6 +13,7 @@ class FuelService extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
                 height: MediaQuery.of(context).size.height * .3,
@@ -23,7 +25,16 @@ class FuelService extends StatelessWidget {
                   ),
                   boxShadow: [BoxShadow(color: Colors.grey, blurRadius: 8)],
                 ),
-              )
+              ),
+              const Text(
+                'Bookings',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.blue,
+                ),
+              ),
+            BookingDetails(),
             ],
           ),
         ),

@@ -11,12 +11,12 @@ class DashBoard extends StatelessWidget {
         backgroundColor: Colors.white70,
         appBar: AppBar(
           title: const Text('KFS'),
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.menu),
-            ),
-          ],
+          // actions: [
+          //   IconButton(
+          //     onPressed: () {},
+          //     icon: const Icon(Icons.menu),
+          //   ),
+          // ],
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -26,7 +26,7 @@ class DashBoard extends StatelessWidget {
                 width: double.infinity,
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("assets/images/home.jpeg"),
+                    image: AssetImage('assets/images/home.jpeg'),
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -42,10 +42,11 @@ class DashBoard extends StatelessWidget {
                             const Text(
                               'Kerala Fuel Service',
                               style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 34,
-                                  fontWeight: FontWeight.bold,
-                                  fontStyle: FontStyle.italic),
+                                color: Colors.white,
+                                fontSize: 34,
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                              ),
                             ),
                             const SizedBox(
                               height: 60,
@@ -63,26 +64,30 @@ class DashBoard extends StatelessWidget {
                             const Text(
                               'Faster Simpler Smarter. . . . .KFS',
                               style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                  fontStyle: FontStyle.italic),
+                                color: Colors.white,
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                fontStyle: FontStyle.italic,
+                              ),
                             ),
                             const SizedBox(
                               height: 200,
                             ),
                             Center(
                               child: ElevatedButton(
-                                  onPressed: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            const HomeScreen(),
-                                      ),
-                                    );
-                                  },
-                                  child: const Text('Go')),
+                                onPressed: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => const HomeScreen(),
+                                    ),
+                                  );
+                                },
+                                child: const Text(
+                                  'Go',
+                                  style: TextStyle(fontSize: 35),
+                                ),
+                              ),
                             )
                           ],
                         ),

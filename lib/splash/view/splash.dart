@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(15),
-            child: Container(
+            child: DecoratedBox(
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/splash.jpeg'),
